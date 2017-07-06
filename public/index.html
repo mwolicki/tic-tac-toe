@@ -1,14 +1,49 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-  <title>Simple Fable App</title>
-  <link rel="shortcut icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <title>Tic Tac Toe</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style>
+      .game-button {
+        width: 100px;
+        height: 100px;
+        font-size: 50pt;
+      }
+    </style>
 </head>
 <body>
-  <h1>Using HTML5 Canvas</h1>
-  <canvas align="center" id="canvas" width="1000" height="800"></canvas>
+  
+  <div class="content">
+    <h1>Tic Tac Toe</h1>    
+    <div name="start">
+      <button class="button">Human - Computer</button>  
+    </div>
+    <div name="board" id="board">
+      
+      <button id="b00" class="button game-button">&nbsp;</button>  
+      <button id="b01" class="button game-button">&nbsp;</button>  
+      <button id="b02" class="button game-button">&nbsp;</button>  <br>
+      <button id="b10" class="button game-button">&nbsp;</button>  
+      <button id="b11" class="button game-button">&nbsp;</button>  
+      <button id="b12" class="button game-button">&nbsp;</button>  <br>
+      <button id="b20" class="button game-button">&nbsp;</button>  
+      <button id="b21" class="button game-button">&nbsp;</button>  
+      <button id="b22" class="button game-button">&nbsp;</button>
+    </div>  
+    </div>
+
+  </script>
   <script src="bundle.js"></script>
+  
 </body>
 </html>
