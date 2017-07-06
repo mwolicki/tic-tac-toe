@@ -20,7 +20,7 @@ let draw = function
         for i = 0 to 2 do
             for j = 0 to 2 do
                 buttons.[sprintf"b%i%i" i j].innerHTML <- board.[i,j] 
-                                        |> Option.map (sprintf "%O") 
+                                        |> Option.map (function Player.X -> "X" | _ -> "O") 
                                         |> Option.defaultValue "&nbsp;"
         
 
